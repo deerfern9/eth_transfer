@@ -49,7 +49,7 @@ def main():
             send_eth(private, address_to, remainder)
         except Exception as e:
             logger.exception(e)
-            open('errors.txt', 'a').write(f'{private};{address_to};{remainder}')
+            open('errors.txt', 'a').write(f'{private};{address_to};{remainder};{e}')
 
 
 if __name__ == '__main__':
